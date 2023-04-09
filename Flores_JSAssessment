@@ -1,0 +1,41 @@
+// create a variable to hold your NFT's
+const NFTs = []
+// this function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata, 
+// and store it in the variable above.
+function mintNFT(Name, Artwork, Game, Iconcolor) {
+    const NFT = {
+        "name": Name,
+        "artwork": Artwork,
+        "game": Game,
+        "iconcolor": Iconcolor
+    }
+    NFTs.push (NFT);
+    console.log ("Minted: " + Name);
+}
+
+// create a "loop" that will go through an "array" of NFT's
+// and print their metadata with console.log()
+function listNFTs() {
+    for(let i = 0; i < NFTs.length; i++){
+        console.log("\nID \t" + (i + 1));
+        console.log("Name: \t" + NFTs[i].name);
+        console.log("Artwork: \t" + NFTs[i].artwork);
+        console.log("Game: \t" + NFTs[i].game);
+        console.log("Icon Color: \t" + NFTs[i].iconcolor);
+    }
+}
+
+// print the total number of NFTs we have minted to the console
+function getTotalSupply () {
+    console.log("\n" + NFTs.length);
+}
+
+// call your functions below this line
+mintNFT ("Danielle", "The Merge", "Axie Infinity", "Green");
+mintNFT ("Haerin", "Human One", "The Sandbox", "White");
+mintNFT ("Hanni", "Ocean Front", "Splinterlands", "Pink");
+mintNFT ("Hyein", "Everydays", "Metaspace", "Blue");
+mintNFT ("Minji", "Quantum", "Gods Unchained", "Yellow");
+listNFTs();
+getTotalSupply();
