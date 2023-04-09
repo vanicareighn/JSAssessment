@@ -11,7 +11,8 @@ function mintNFT(Name, Artwork, Game, Iconcolor) {
         "iconcolor": Iconcolor
     }
     NFTs.push (NFT);
-    console.log ("Minted: " + Name);
+    console.log ("\nMinted: " + Name);
+    console.log ("\nIcon Color: " + Iconcolor);
 }
 
 // create a "loop" that will go through an "array" of NFT's
@@ -19,10 +20,11 @@ function mintNFT(Name, Artwork, Game, Iconcolor) {
 function listNFTs() {
     for(let i = 0; i < NFTs.length; i++){
         console.log("\nID \t" + (i + 1));
-        console.log("Name: \t" + NFTs[i].name);
-        console.log("Artwork: \t" + NFTs[i].artwork);
-        console.log("Game: \t" + NFTs[i].game);
-        console.log("Icon Color: \t" + NFTs[i].iconcolor);
+        console.log("Name: " + NFTs[i].name);
+        console.log("Artwork: " + NFTs[i].artwork);
+        console.log("Game: " + NFTs[i].game);
+        console.log("Icon Color: " + NFTs[i].iconcolor);
+    }
     }
 }
 
