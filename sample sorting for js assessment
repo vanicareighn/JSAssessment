@@ -1,0 +1,13 @@
+// by order (optional)
+let name = ["Hanni", "Haerin", "Minji", "Danielle", "Hyein"];
+let artwork = ["The Merge", "Human One", "Ocean Front", "Everydays", "Quantum"];
+let game = ["Axie Infinity", "The Sandbox", "Splinterlands", "Metaspace", "Gods Unchained"];
+let iconcolor = ["Green", "White", "Pink", "Blue", "Yellow"];
+        let sortedNames = name.sort();
+        let sortedArtworks = artwork.sort();
+        let sortedGames = game.sort();
+        let sortedIcons= iconcolor.sort();
+        console.log(sortedNames);
+        console.log(sortedArtworks);
+        console.log(sortedGames);
+        console.log(sortedIcons);
